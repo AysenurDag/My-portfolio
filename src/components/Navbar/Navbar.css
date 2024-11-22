@@ -1,0 +1,146 @@
+.navbar {
+  width: 1024px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+[data-theme="dark"] .navbar {
+  background: rgba(24, 24, 29, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+[data-theme="light"] .navbar {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: rgb(65, 43, 82);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+}
+
+.menu-item {
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-item a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  min-width: 180px;
+  z-index: 1;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+[data-theme="dark"] .dropdown-content {
+  background-color: rgba(24, 24, 29, 0.95);
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.dropdown-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: inherit;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(197, 197, 197, 0.2);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  opacity: 0.8;
+}
+
+/* Social Icons Styles */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Dark Mode Icon */
+[data-theme="dark"] .icon {
+  color: #ffffff;
+}
+
+/* Light Mode Icon */
+[data-theme="light"] .icon {
+  color: #000000;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  opacity: 0.8;
+}

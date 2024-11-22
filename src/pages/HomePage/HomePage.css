@@ -1,0 +1,395 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--darkModeBackgroundColor);
+  color: var(--lightModeBackgroundColor);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.background-top,
+.background-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  z-index: -1;
+}
+
+.background-top {
+  top: 0;
+  background-image: url("../../assets/DarkBackgroundGradient.png");
+}
+
+.background-bottom {
+  bottom: 0;
+  background-image: url("../../assets/LightBacgroundGradient.png");
+}
+
+[data-theme="light"] .background-top {
+  background-image: url("../../assets/LightBacgroundGradient.png");
+}
+
+[data-theme="light"] .background-bottom {
+  background-image: url("../../assets/DarkBackgroundGradient.png");
+}
+
+.container.dark {
+  background-color: var(--darkModeBackgroundColor);
+  color: var(--lightModeBackgroundColor);
+}
+
+.container.light {
+  background-color: var(--lightModeBackgroundColor);
+  color: var(--darkModeBackgroundColor);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--darkModeBackgroundColor);
+}
+
+.about-container.dark {
+  background-color: var(--darkModeBackgroundColor);
+  color: rgba(128, 128, 128, 1);
+}
+
+.about-container.light {
+  background-color: var(--lightModeBackgroundColor);
+  color: rgba(125, 125, 125, 1);
+}
+
+/* Main Section Styles */
+.main-section {
+  width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px 0;
+  flex: 1;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 50%;
+  z-index: 2;
+}
+
+.title {
+  width: 800px;
+  font-size: 80px;
+  font-weight: bold;
+  color: var(--basicDarkGray);
+}
+.title span {
+  color: var(--basicDarkGray);
+}
+
+.title .highlight {
+  color: var(--darkModeBackgroundColor);
+}
+[data-theme="dark"] .highlight {
+  color: var(--lightModeBackgroundColor);
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  width: 700px;
+  color: gray;
+}
+
+.image-container {
+  max-height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.mode-logo {
+  max-width: 540px;
+  height: auto;
+  opacity: 0.3;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.button {
+  padding: 12px 24px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.button:active {
+  background-color: rgba(0, 0, 0, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.button.disabled {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Selected works part */
+.selected-work {
+  width: 1024px;
+  margin-bottom: 40px;
+}
+
+.selected-work .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgba(56, 55, 55, 1);
+}
+
+.selected-work .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.selected-work .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+}
+
+.selected-work .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.selected-work .card-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.selected-work .card-link {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.selected-work .card-link:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.selected-work .card-image {
+  max-width: 400px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.selected-work .card-image img {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.selected-work .card-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #ffffff; /* Text color */
+  text-decoration: none;
+  background-color: var(--cardColor);
+  font-weight: 500; /* Slightly bolder text */
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+.selected-work .card-link:hover {
+  color: #cccccc; /* Lighten text color on hover */
+}
+
+.selected-work .card-link::after {
+  content: "→";
+  margin-left: 8px; /* Space between text and arrow */
+  font-size: 18px; /* Adjust arrow size */
+  transition: margin-left 0.3s ease;
+}
+
+.selected-work .card-link:hover::after {
+  margin-left: 12px; /* Animate the arrow on hover */
+}
+
+/* Get to know me part */
+
+.get-to-know-me {
+  width: 1024px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 32px;
+}
+
+.get-to-know-me .cards-grid-hp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.get-to-know-me .cards-grid-hp .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+[data-theme="light"] .get-to-know-me .cards-grid-hp .card {
+  background-color: var(--lightModeBackgroundColor);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.get-to-know-me .cards-grid-hp .card img {
+  display: block;
+  margin: 0 auto; /* Resmi yatayda ortalar */
+  border-radius: 8px;
+  align-self: center; /* Resmi dikeyde ortalar */
+}
+.get-to-know-me .cards-grid-hp .card .card-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.get-to-know-me .cards-grid-hp .card .card-description {
+  font-size: 16px;
+  color: var(--basicDarkGray);
+}
+
+/* Let's work together part */
+.lets-work-together {
+  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.lets-work-together h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lets-work-together p {
+  font-size: 18px;
+  color: gray;
+  margin-top: 5px;
+}
+/* Light Mode için */
+[data-theme="light"] .lets-work-together {
+  background-color: #ffffff;
+}
+
+[data-theme="light"] .lets-work-together h2 {
+  color: #000000;
+}
+
+[data-theme="light"] .get-in-touch {
+  background: linear-gradient(90deg, rgba(26, 26, 26, 1), rgba(19, 19, 19, 1));
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .lets-work-together {
+  background-color: var(--darkModeBackgroundColor);
+}
+
+[data-theme="dark"] .lets-work-together h2 {
+  color: var(--lightModeBackgroundColor);
+}
+
+.get-in-touch-container {
+  display: flex;
+  align-items: center;
+}
+
+.get-in-touch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, rgba(26, 26, 26, 1), rgba(19, 19, 19, 1));
+  border-radius: 9px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+
+.get-in-touch .button-icon {
+  width: 20px;
+  height: auto;
+}
+
+.get-in-touch:hover {
+  opacity: 0.9;
+}
+
+.button-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
+}

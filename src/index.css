@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --darkModeBackgroundColor: rgba(13, 13, 13, 1);
+  --lightModeBackgroundColor: rgba(255, 255, 255, 1);
+  --lightblue: rgba(63, 100, 234, 0.43);
+  --red: rgba(233, 63, 64, 0.43);
+  --yellow: rgba(255, 184, 0, 0.43);
+  --navbarColor: rgba(24, 24, 29, 0.3);
+  --lightGray: rgba(197, 197, 197, 1);
+  --basicDarkGray: rgba(128, 128, 128, 1);
+  --cardColor: rgba(24, 24, 24, 1);
+}

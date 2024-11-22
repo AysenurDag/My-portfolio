@@ -1,0 +1,231 @@
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--darkModeBackgroundColor);
+}
+
+.work-container.dark {
+  background-color: var(--darkModeBackgroundColor);
+  color: rgba(128, 128, 128, 1);
+}
+
+.work-container.light {
+  background-color: var(--lightModeBackgroundColor);
+  color: rgba(125, 125, 125, 1);
+}
+
+.background-top,
+.background-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  z-index: 1;
+}
+
+.background-top {
+  top: 0;
+  background-image: url("../../assets/DarkBackgroundGradient.png");
+}
+
+.background-bottom {
+  bottom: 0;
+  background-image: url("../../assets/LightBacgroundGradient.png");
+  transform: scaleY(-1);
+}
+
+[data-theme="light"] .background-top {
+  background-image: url("../../assets/LightBacgroundGradient.png");
+}
+
+[data-theme="light"] .background-bottom {
+  background-image: url("../../assets/DarkBackgroundGradient.png");
+}
+
+.work-main-section {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 120px 20px 60px;
+}
+
+.work-content {
+  text-align: left;
+}
+
+.work-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.work-content p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.separator {
+  width: 100%;
+  margin: 50px auto;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] .separator {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.projects {
+  width: 1024px;
+  margin-bottom: 40px;
+}
+
+.projects .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgba(56, 55, 55, 1);
+}
+
+.projects .projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.projects .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+}
+
+.projects .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.projects .card-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.projects .card-link {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.projects .card-link:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.projects .card-image {
+  max-width: 400px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projects .card-image img {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.projects .card-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #ffffff; /* Text color */
+  text-decoration: none;
+  background-color: var(--cardColor);
+  font-weight: 500; /* Slightly bolder text */
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+.projects .card-link:hover {
+  color: #cccccc; /* Lighten text color on hover */
+}
+
+.projects .card-link::after {
+  content: "→";
+  margin-left: 8px; /* Space between text and arrow */
+  font-size: 18px; /* Adjust arrow size */
+  transition: margin-left 0.3s ease;
+}
+
+.projects .card-link:hover::after {
+  margin-left: 12px; /* Animate the arrow on hover */
+}
+
+.your-project {
+  text-align: center;
+  margin-top: 80px;
+  padding: 40px;
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  position: relative;
+}
+
+[data-theme="light"] .your-project {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.stars-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.your-project h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.your-project p {
+  font-size: 18px;
+  color: inherit;
+  margin-bottom: 20px;
+}
+
+/* Get in touch part */
+
+.get-in-touch {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Butonu yatay olarak ortalamak için */
+  gap: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, rgba(26, 26, 26, 1), rgba(19, 19, 19, 1));
+  border-radius: 9px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  margin: 0 auto; /* Butonu dikey olarak ortalamak için */
+}
+
+.get-in-touch .button-icon {
+  width: 20px;
+  height: auto;
+}
+
+.get-in-touch:hover {
+  opacity: 0.9;
+}
+
+.button-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
+}

@@ -1,0 +1,126 @@
+.notebook-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--darkModeBackgroundColor);
+}
+
+.notebook-container.dark {
+  background-color: var(--darkModeBackgroundColor);
+  color: rgba(128, 128, 128, 1);
+}
+
+.notebook-container.light {
+  background-color: var(--lightModeBackgroundColor);
+  color: rgba(125, 125, 125, 1);
+}
+
+.background-top,
+.background-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  z-index: 1;
+}
+
+.background-top {
+  top: 0;
+  background-image: url("../../assets/DarkBackgroundGradient.png");
+}
+
+.background-bottom {
+  bottom: 0;
+  background-image: url("../../assets/LightBacgroundGradient.png");
+  transform: scaleY(-1);
+}
+
+[data-theme="light"] .background-top {
+  background-image: url("../../assets/LightBacgroundGradient.png");
+}
+
+[data-theme="light"] .background-bottom {
+  background-image: url("../../assets/DarkBackgroundGradient.png");
+}
+
+.notebook-main-section {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 120px 20px 60px;
+}
+
+.notebook-content {
+  text-align: left;
+}
+
+.notebook-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.notebook-content p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.separator {
+  width: 100%;
+  margin: 50px auto;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] .separator {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.notebook-cards {
+  max-width: 1024px;
+  max-height: 1024px;
+}
+
+.notebook-cards .cards-grid-nb {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.notebook-cards .cards-grid-nb .card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.notebook-cards .cards-grid-nb .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cards-grid-nb .card-title {
+  font-size: 1.5rem;
+  margin: 0;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.cards-grid-nb .card-description {
+  font-size: 1rem;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
