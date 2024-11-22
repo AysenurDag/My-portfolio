@@ -1,26 +1,104 @@
-.notebook-details {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+.notebook-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--darkModeBackgroundColor);
+  min-height: 100vh;
+  position: relative;
+  padding-top: 100px;
+}
+
+.notebook-details-container.dark {
+  background-color: var(--darkModeBackgroundColor);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.notebook-details-container.light {
+  background-color: var(--lightModeBackgroundColor);
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.background-top,
+.background-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  z-index: 1;
+}
+
+.background-top {
+  top: 0;
+  background-image: url("../../assets/DarkBackgroundGradient.png");
+}
+
+.background-bottom {
+  bottom: 0;
+  background-image: url("../../assets/LightBacgroundGradient.png");
+  transform: scaleY(-1);
+}
+
+[data-theme="light"] .background-top {
+  background-image: url("../../assets/LightBacgroundGradient.png");
+}
+
+[data-theme="light"] .background-bottom {
+  background-image: url("../../assets/DarkBackgroundGradient.png");
+}
+
+.notebook-details-main {
+  width: 1024px;
   text-align: left;
 }
 
-.notebook-details-image {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 20px;
+.notebook-details-main h1 {
+  font-size: 48px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 32px;
-  font-weight: bold;
+.notebook-details-main p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: rgba(128, 128, 128, 0.8);
+}
+
+.notebook-details-image-container {
+  margin: 20px 0;
+}
+
+.notebook-details-main img {
+  width: 100%;
+  height: 504px;
+  object-fit: cover;
+  object-position: 10% 60%;
+  border-radius: 8px;
+}
+
+.notebook-details-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.notebook-details-content ol {
+  padding-left: 20px;
+}
+
+.notebook-details-content ol li {
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 20px;
+.notebook-details-content strong {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .notebook-details-main {
+    width: 90%;
+  }
+
+  .notebook-details-image {
+    height: auto;
+  }
 }

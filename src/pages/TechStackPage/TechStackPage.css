@@ -106,8 +106,18 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   background-color: var(--cardColor);
   padding: 16px;
-  height: 300px; /* Adjust as needed */
+  height: 300px;
   text-align: center;
+}
+
+[data-theme="dark"] .tech-cards .cards-grid-tsp .card {
+  background-color: var(--darkModeBackgroundColor);
+  color: rgba(128, 128, 128, 1);
+}
+
+[data-theme="light"] .tech-cards .cards-grid-tsp .card {
+  background-color: var(--lightModeBackgroundColor);
+  color: rgba(125, 125, 125, 1);
 }
 
 .tech-cards .cards-grid-tsp .card img {
@@ -115,9 +125,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 150px; /* Adjust for desired size */
+  max-width: 150px;
   max-height: 150px;
-  object-fit: contain; /* Ensures image scales without distortion */
+  object-fit: contain;
 }
 
 .tech-cards .cards-grid-tsp .card .card-title {

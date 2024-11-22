@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   background-color: var(--darkModeBackgroundColor);
+  min-height: 100vh;
+  position: relative;
+  padding-top: 100px;
 }
 
 .notebook-container.dark {
@@ -47,8 +49,6 @@
 
 .notebook-main-section {
   width: 1024px;
-  margin: 0 auto;
-  padding: 120px 20px 60px;
 }
 
 .notebook-content {
@@ -77,8 +77,7 @@
 }
 
 .notebook-cards {
-  max-width: 1024px;
-  max-height: 1024px;
+  width: 1024px;
 }
 
 .notebook-cards .cards-grid-nb {
@@ -92,35 +91,49 @@
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  aspect-ratio: 1 / 1;
+  width: 100%;
 }
 
 .notebook-cards .cards-grid-nb .card img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 12px;
+  z-index: 1;
+}
+
+.cards-grid-nb .card-title,
+.cards-grid-nb .card-description {
+  position: absolute;
+  color: #ffffff;
+  z-index: 2;
+  background: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  width: fit-content;
+  max-width: 90%;
 }
 
 .cards-grid-nb .card-title {
-  font-size: 1.5rem;
-  margin: 0;
-  position: absolute;
-  bottom: 10%;
+  bottom: 25%;
   left: 10%;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  border-radius: 4px;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .cards-grid-nb .card-description {
-  font-size: 1rem;
-  opacity: 0.8;
-  position: absolute;
-  bottom: 0;
+  bottom: 10%;
   left: 10%;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  border-radius: 4px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .notebook-cards .cards-grid-nb {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }

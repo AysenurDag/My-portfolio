@@ -2,8 +2,8 @@ import React from "react";
 import "./Card.css";
 
 interface CardProps {
-  title: string;
-  description: string;
+  title?: React.ReactNode;
+  description?: string;
   imageUrl?: string;
   link?: string;
   logoUrl?: string;
@@ -37,7 +37,10 @@ const Card: React.FC<CardProps> = ({
         )}
       </div>
       <div className="card-image">
-        <img src={imageUrl} alt={title} />
+        <img
+          src={imageUrl}
+          alt={typeof title === "string" ? title : "Card image"}
+        />
       </div>
     </div>
   );

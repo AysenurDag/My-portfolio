@@ -5,6 +5,8 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import WorkPage from "./pages/WorkPage/WorkPage";
 import NotebookPage from "./pages/NotebookPage/NotebookPage";
 import TechStackPage from "./pages/TechStackPage/TechStackPage";
+import BookShelfPage from "./pages/BookShelfPage/BookShelfPage";
+import NotebookDetailsPage from "./pages/NotebookPage/NotebookDetailsPage";
 
 const App: React.FC = () => {
   return (
@@ -15,6 +17,8 @@ const App: React.FC = () => {
         <Route path="/work" element={<WorkPage />} />
         <Route path="/notebook" element={<NotebookPage />} />
         <Route path="/tech-stack" element={<TechStackPage />} />
+        <Route path="/bookshelf" element={<BookShelfPage />} />
+        <Route path="/notebook-details" element={<NotebookDetailsPage />} />
       </Routes>
     </Router>
   );

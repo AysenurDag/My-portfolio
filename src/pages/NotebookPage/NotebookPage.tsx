@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Card from "../../components/Card/Card";
@@ -9,6 +10,12 @@ import CardImage from "../../assets/NotebookImage.png";
 
 const NotebookPage: React.FC = () => {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/notebook-details");
+  };
+
   return (
     <div
       className={`notebook-container ${darkMode ? "dark" : "light"}`}
@@ -28,17 +35,38 @@ const NotebookPage: React.FC = () => {
           <div className="cards-grid-nb">
             <Card
               imageUrl={CardImage}
-              title="Ultimate guide to the App Router in Next.js 13"
+              title={
+                <span
+                  onClick={handleNavigate}
+                  style={{ cursor: "pointer", textDecoration: "underline" }}
+                >
+                  Ultimate guide to the App Router in Next.js 13
+                </span>
+              }
               description="17th Jul 2023 — 7 min read"
             />
             <Card
               imageUrl={CardImage}
-              title="Ultimate guide to the App Router in Next.js 13"
+              title={
+                <span
+                  onClick={handleNavigate}
+                  style={{ cursor: "pointer", textDecoration: "underline" }}
+                >
+                  Ultimate guide to the App Router in Next.js 13
+                </span>
+              }
               description="17th Jul 2023 — 7 min read"
             />
             <Card
               imageUrl={CardImage}
-              title="Ultimate guide to the App Router in Next.js 13"
+              title={
+                <span
+                  onClick={handleNavigate}
+                  style={{ cursor: "pointer", textDecoration: "underline" }}
+                >
+                  Ultimate guide to the App Router in Next.js 13
+                </span>
+              }
               description="17th Jul 2023 — 7 min read"
             />
           </div>

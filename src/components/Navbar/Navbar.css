@@ -25,6 +25,8 @@
 
 [data-theme="light"] .navbar {
   background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
 }
 
 .logo {
@@ -32,6 +34,9 @@
   font-size: 24px;
   text-decoration: none;
   color: white;
+}
+[data-theme="light"] .logo {
+  color: var(--darkModeBackgroundColor);
 }
 
 .logo:hover {
@@ -95,13 +100,25 @@
   cursor: pointer;
   font-size: 14px;
   color: inherit;
+  text-decoration: none;
   transition: background-color 0.3s;
 }
 
 .dropdown-item:hover {
   background-color: rgba(197, 197, 197, 0.2);
+  color: inherit;
+  text-decoration: none;
+}
+.dropdown-item a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
 }
 
+.dropdown-item a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 .social-icons {
   display: flex;
   align-items: center;

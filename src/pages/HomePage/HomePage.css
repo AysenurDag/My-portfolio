@@ -190,7 +190,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid rgba(56, 55, 55, 1);
+  border: 2px solid none;
 }
 
 .selected-work .card-wrapper {
@@ -219,19 +219,6 @@ body {
   margin-bottom: 20px;
 }
 
-.selected-work .card-link {
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.selected-work .card-link:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
 .selected-work .card-image {
   max-width: 400px;
   display: flex;
@@ -248,27 +235,27 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
-  color: #ffffff; /* Text color */
+  color: var(--lightModeBackgroundColor);
   text-decoration: none;
-  background-color: var(--cardColor);
-  font-weight: 500; /* Slightly bolder text */
+  background-color: var(--darkModeBackgroundColor);
+  font-weight: 500;
   border-radius: 8px;
   transition: color 0.3s ease;
 }
-
-.selected-work .card-link:hover {
-  color: #cccccc; /* Lighten text color on hover */
+[data-theme="light"] .selected-work .card-link {
+  background-color: var(--lightModeBackgroundColor);
+  color: var(--darkModeBackgroundColor);
 }
 
 .selected-work .card-link::after {
   content: "→";
-  margin-left: 8px; /* Space between text and arrow */
-  font-size: 18px; /* Adjust arrow size */
+  margin-left: 8px;
+  font-size: 18px;
   transition: margin-left 0.3s ease;
 }
 
 .selected-work .card-link:hover::after {
-  margin-left: 12px; /* Animate the arrow on hover */
+  margin-left: 12px;
 }
 
 /* Get to know me part */
@@ -300,9 +287,9 @@ body {
 
 .get-to-know-me .cards-grid-hp .card img {
   display: block;
-  margin: 0 auto; /* Resmi yatayda ortalar */
+  margin: 0 auto;
   border-radius: 8px;
-  align-self: center; /* Resmi dikeyde ortalar */
+  align-self: center;
 }
 .get-to-know-me .cards-grid-hp .card .card-title {
   font-size: 32px;

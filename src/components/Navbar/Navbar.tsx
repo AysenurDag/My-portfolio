@@ -32,7 +32,9 @@ const Navbar: React.FC = () => {
         <div className="dropdown">
           <li className="menu-item">More ▾</li>
           <div className="dropdown-content">
-            <div className="dropdown-item">Bookshelf</div>
+            <div className="dropdown-item">
+              <Link to="/bookshelf">Bookshelf</Link>
+            </div>
             <div className="dropdown-item">
               <Link to="/tech-stack">Tech Stack</Link>
             </div>

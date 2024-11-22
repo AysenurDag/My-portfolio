@@ -7,8 +7,18 @@
   padding: 20px;
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 2px solid rgba(56, 55, 55, 1);
+  border: 2px solid none;
   transition: background-color 0.3s, border 0.3s;
+}
+
+[data-theme="dark"] .card {
+  background-color: var(--darkModeBackgroundColor);
+  color: var(--lightModeBackgroundColor);
+}
+
+[data-theme="light"] .card {
+  background-color: var(--lightModeBackgroundColor);
+  color: var(--darkModeBackgroundColor);
 }
 
 .card-logo-top {
