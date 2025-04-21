@@ -6,7 +6,7 @@ import Footer from "../../components/Footer/Footer";
 import "./AboutPage.css";
 import SignatureLight from "../../assets/signature.png";
 import SignatureDark from "../../assets/signatureDark.png";
-import RectangleImage from "../../assets/rectangle.png";
+import AboutImage from "../../assets/AboutImage.png";
 
 const AboutPage: React.FC = () => {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
@@ -65,7 +65,7 @@ const AboutPage: React.FC = () => {
             />
           </div>
           <div className="about-image">
-            <img src={RectangleImage} alt="Rectangle" className="rectangle" />
+            <img src={AboutImage} alt="Rectangle" className="rectangle" />
             <button className="get-in-touch-button">Get in touch</button>
           </div>
         </div>
