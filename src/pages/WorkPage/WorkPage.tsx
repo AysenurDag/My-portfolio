@@ -17,6 +17,10 @@ import PcImage from "../../assets/screenShoot.png";
 import TextImage from "../../assets/TextImage.png";
 import Stars from "../../assets/Stars.png";
 import ButtonIcon from "../../assets/ButtonIcon.png";
+import PortfolioImage from "../../assets/PortfolioImage.png";
+import PortfolioLogo from "../../assets/PortfolioLogo.png";
+import KeyloggerImage from "../../assets/KeyloggerImage.png";
+import KeyloggerLogo from "../../assets/KeyloggerLogo.png";
 
 const WorkPage: React.FC = () => {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
@@ -38,32 +42,23 @@ const WorkPage: React.FC = () => {
         <section className="projects">
           <div className="projects-wrapper">
             <Card
-              logoUrl={CardImage1}
-              title="Subbi — The free subscriptions manager"
-              description="Subbi is a side project that I’ve built to help me keep track of how much I spend on subscriptions and also to prevent the 'accidental' bill after a 14-day trial ends."
-              imageUrl={PhoneImage}
+              logoUrl={KeyloggerLogo}
+              title="InkSpy — Python-based KeyLogger for PDF Embedding"
+              description="As part of my Information System Security coursework, I developed a keylogger using Python that can be embedded within a PDF file. This script records keystrokes in the background and sends them to a predefined attacker email address. The project demonstrates real-world cybersecurity threats, including social engineering and data exfiltration techniques."
+              imageUrl={KeyloggerImage}
               link="https://example.com"
+              buttonLabel="Learn More"
+              orientation="horizontal-image-right"
             />
+
             <Card
-              logoUrl={CardImage2}
-              title="React Documentation"
-              description="With the release of the new React website on March 16, there was a need for localization to make the documentation accessible to Arabic-speaking developers. I contributed to translating several documentation, worked with great developers."
-              imageUrl={IpadImage}
+              logoUrl={PortfolioLogo}
+              title="Personal Portfolio Website"
+              description="I built a responsive portfolio site using React and TypeScript. The project is component-based and includes dynamic features powered by Redux for theme state management. It features reusable Card, Navbar, and Footer components, and supports both dark and light modes."
+              imageUrl={PortfolioImage}
               link="https://example.com"
-            />
-            <Card
-              logoUrl={CardImage3}
-              title="Storybook Documentation"
-              description="This was my very first OSS contribution, I contributed to translating the documentation of Storybook into Arabic, enabling a wider audience to access and understand the resources available."
-              imageUrl={PcImage}
-              link="https://example.com"
-            />
-            <Card
-              logoUrl={CardImage4}
-              title="Parrotxt"
-              description="Lorem Ipsum is not professional, use Parrotxt to generate real text for your design. This was my first product I launched on Product Hunt."
-              imageUrl={TextImage}
-              link="https://example.com"
+              buttonLabel="Learn More"
+              orientation="horizontal-image-right"
             />
           </div>
         </section>
