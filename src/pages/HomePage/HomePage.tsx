@@ -39,11 +39,12 @@ const HomePage: React.FC = () => {
               <span className="highlight">Ayşenur Dağ</span>
             </h1>
             <p className="subtitle">
-              Experienced in writing B2B applications using React, experienced
-              in using state management tools such as Redux, and also has
-              experience in end-to-end application development by writing .NET
-              apis at a basic level. A young dynamic software engineer student
-              with experience on modern applications.
+              Proficient in developing B2B platforms using React and TypeScript,
+              and skilled in managing application state with Redux. Also
+              experienced in full-stack development, including creating and
+              integrating .NET APIs using C# and SQL. Eager to contribute to
+              real-world software projects through a clean, scalable, and
+              user-centered development approach.
             </p>
             <div className="button-group">
               <button
