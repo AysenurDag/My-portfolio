@@ -29,28 +29,30 @@ const AboutPage: React.FC = () => {
           <div className="about-text">
             <h2>WHO I AM</h2>
             <p>
-              I'm Ayşenur Dağ, a multi-disciplinary front-end engineer and UI/UX
-              designer based in Antalya.
+              I'm Ayşenur Dağ, a passionate front-end developer and UI/UX
+              enthusiast based in Antalya, Turkey. I also have hands-on
+              experience with back-end technologies such as .NET, C#, and Azure
+              Functions, enabling me to contribute effectively across the full
+              stack.
             </p>
             <h2>WHAT I DO</h2>
             <p>
-              With two years of invaluable experience in my role at Harmony
-              Technology –– a tech company based here in Rabat, I have honed my
-              skills in React.js, Next.js, TailwindCSS, and TypeScript, allowing
-              me to craft seamless and interactive user experiences. During my
-              time at Harmony Technology, I had the privilege of collaborating
-              on projects for esteemed clients such as the Ministry of Health,
-              Ministry of Education, and Ministry of Justice. It was an
-              incredibly rewarding experience to develop applications that
-              directly impact the lives of Moroccan citizens.
+              With hands-on experience in building B2B applications, I
+              specialize in developing user-focused interfaces using React,
+              TypeScript, TailwindCSS, and Redux for efficient state management.
+              During my internship , I contributed to an energy reporting
+              project for Turkey’s leading electricity distribution companies. I
+              developed front-end features with React and implemented back-end
+              functionality using .NET 8, Azure Functions, and SQL integrations.
             </p>
             <h2>WHAT I DID</h2>
             <p>
-              Before delving into the realm of front end engineering, I spent
-              five years as a graphic designer. This background has equipped me
-              with a keen eye for aesthetics and a deep understanding of
-              user-centered design principles. It enables me to seamlessly blend
-              functionality and visual appeal in every project I undertake.
+              contributed to an enterprise-level energy reporting project where
+              I was responsible for both the frontend (React, TypeScript) and
+              backend (.NET 8, Azure Functions, SQL) development. This
+              experience gave me the opportunity to apply what I’ve learned in
+              real-world scenarios and to collaborate in a professional
+              engineering environment.
             </p>
             <p>
               Feel free to reach out via e-mail, or follow me on Twitter. Want
