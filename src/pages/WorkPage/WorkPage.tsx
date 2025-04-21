@@ -7,14 +7,6 @@ import Card from "../../components/Card/Card";
 import "./WorkPage.css";
 
 /* importing assets */
-import CardImage1 from "../../assets/SubiiLogo.png";
-import CardImage2 from "../../assets/ReactIcon.png";
-import CardImage3 from "../../assets/PinkIcon.png";
-import CardImage4 from "../../assets/ParrotxtLogo.png";
-import PhoneImage from "../../assets/ProjectImage1.png";
-import IpadImage from "../../assets/IpadPro.png";
-import PcImage from "../../assets/screenShoot.png";
-import TextImage from "../../assets/TextImage.png";
 import Stars from "../../assets/Stars.png";
 import ButtonIcon from "../../assets/ButtonIcon.png";
 import PortfolioImage from "../../assets/PortfolioImage.png";
