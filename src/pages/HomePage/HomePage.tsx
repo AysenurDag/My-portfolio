@@ -10,17 +10,15 @@ import Card from "../../components/Card/Card";
 /* Assets */
 import DarkLogo from "../../assets/Mode=Dark.png";
 import LightLogo from "../../assets/Mode=Light.png";
-import CardImage1 from "../../assets/SubiiLogo.png";
-import CardImage2 from "../../assets/ReactIcon.png";
-import CardImage3 from "../../assets/PinkIcon.png";
-import PhoneImage from "../../assets/ProjectImage1.png";
-import IpadImage from "../../assets/IpadPro.png";
-import PcImage from "../../assets/screenShoot.png";
 import AboutIcon from "../../assets/AboutIcon.png";
 import NotebookIcon from "../../assets/Notebook.png";
 import BookshelfIcon from "../../assets/Group-1984.png";
 import TechStackIcon from "../../assets/TechStackIcon.png";
 import ButtonIcon from "../../assets/ButtonIcon.png";
+import PortfolioImage from "../../assets/PortfolioImage.png";
+import PortfolioLogo from "../../assets/PortfolioLogo.png";
+import KeyloggerImage from "../../assets/KeyloggerImage.png";
+import KeyloggerLogo from "../../assets/KeyloggerLogo.png";
 
 const HomePage: React.FC = () => {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
@@ -84,28 +82,20 @@ const HomePage: React.FC = () => {
         <h2>Selected Work</h2>
         <div className="card-wrapper">
           <Card
-            logoUrl={CardImage1}
-            title="Subbi — The free subscriptions manager"
-            description="Subbi is a side project that I’ve built to help me keep track of how much I spend on subscriptions and also to prevent the 'accidental' bill after a 14-day trial ends. It helps you keep track of bills like Netflix, Spotify, Xbox Game Pass, Bus Card, Bank Cards, and many more."
-            imageUrl={PhoneImage}
-            link="https://example.com"
-            buttonLabel="Download App"
-            orientation="horizontal-image-right"
-          />
-          <Card
-            logoUrl={CardImage2}
-            title="React Documentation"
-            description="With the release of the new React website on March 16, there was a need for localization to make the documentation accessible to Arabic-speaking developers. I contributed to translating several documentation, worked with great developers."
-            imageUrl={IpadImage}
+            logoUrl={KeyloggerLogo}
+            title="InkSpy — Python-based KeyLogger for PDF Embedding"
+            description="As part of my Information System Security coursework, I developed a keylogger using Python that can be embedded within a PDF file. This script records keystrokes in the background and sends them to a predefined attacker email address. The project demonstrates real-world cybersecurity threats, including social engineering and data exfiltration techniques."
+            imageUrl={KeyloggerImage}
             link="https://example.com"
             buttonLabel="Learn More"
             orientation="horizontal-image-right"
           />
+
           <Card
-            logoUrl={CardImage3}
-            title="Storybook Documentation"
-            description="This was my very first OSS contribution, I contributed to translating the documentation of Storybook into Arabic, enabling a wider audience to access and understand the resources available."
-            imageUrl={PcImage}
+            logoUrl={PortfolioLogo}
+            title="Personal Portfolio Website"
+            description="I built a responsive portfolio site using React and TypeScript. The project is component-based and includes dynamic features powered by Redux for theme state management. It features reusable Card, Navbar, and Footer components, and supports both dark and light modes."
+            imageUrl={PortfolioImage}
             link="https://example.com"
             buttonLabel="Learn More"
             orientation="horizontal-image-right"
