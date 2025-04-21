@@ -22,4 +22,5 @@ code {
   --lightGray: rgba(197, 197, 197, 1);
   --basicDarkGray: rgba(128, 128, 128, 1);
   --cardColor: rgba(24, 24, 24, 1);
+  --dark-gray: rgb(41, 41, 41);
 }

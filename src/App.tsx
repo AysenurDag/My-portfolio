@@ -7,6 +7,7 @@ import NotebookPage from "./pages/NotebookPage/NotebookPage";
 import TechStackPage from "./pages/TechStackPage/TechStackPage";
 import BookShelfPage from "./pages/BookShelfPage/BookShelfPage";
 import NotebookDetailsPage from "./pages/NotebookPage/NotebookDetailsPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Route path="/tech-stack" element={<TechStackPage />} />
         <Route path="/bookshelf" element={<BookShelfPage />} />
         <Route path="/notebook-details" element={<NotebookDetailsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Router>
   );

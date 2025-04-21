@@ -7,9 +7,15 @@ import Card from "../../components/Card/Card";
 import "./TechStackPage.css";
 
 // Importing assets
-import FigmaIcon from "../../assets/AboutIcon.png";
-import NextJsIcon from "../../assets/ButtonIcon.png";
-import TailwindIcon from "../../assets/PinkIcon.png";
+import FigmaIcon from "../../assets/figmaIcon.png";
+import GithubIcon from "../../assets/Github.png";
+import VsCodeIcon from "../../assets/VsCode.png";
+import TypeScript from "../../assets/TypeScript.png";
+import ReactQuery from "../../assets/ReactQuery.png";
+import Duolingo from "../../assets/Duolingo.png";
+import ChatGPT from "../../assets/ChatGPT.png";
+import Chrome from "../../assets/Chrome.png";
+import AppleMusic from "../../assets/AppleMusic.png";
 
 const TechStackPage: React.FC = () => {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
@@ -34,14 +40,24 @@ const TechStackPage: React.FC = () => {
             <div className="cards-grid-tsp">
               <Card imageUrl={FigmaIcon} title="Figma" description="Design" />
               <Card
-                imageUrl={NextJsIcon}
-                title="Next.js"
-                description="Web Framework"
+                imageUrl={GithubIcon}
+                title="Github"
+                description="Version Control"
               />
               <Card
-                imageUrl={TailwindIcon}
-                title="TailwindCSS"
-                description="CSS"
+                imageUrl={VsCodeIcon}
+                title="VS Code"
+                description="Editor"
+              />
+              <Card
+                imageUrl={TypeScript}
+                title="TypeScript"
+                description="Language"
+              />
+              <Card
+                imageUrl={ReactQuery}
+                title="React Query"
+                description="Server State "
               />
             </div>
           </section>
@@ -49,33 +65,21 @@ const TechStackPage: React.FC = () => {
           <section className="tech-cards">
             <h2>Apps</h2>
             <div className="cards-grid-tsp">
-              <Card imageUrl={FigmaIcon} title="Figma" description="Design" />
               <Card
-                imageUrl={NextJsIcon}
-                title="Next.js"
-                description="Web Framework"
+                imageUrl={Duolingo}
+                title="Duolingo"
+                description="Education"
               />
               <Card
-                imageUrl={TailwindIcon}
-                title="TailwindCSS"
-                description="CSS"
+                imageUrl={ChatGPT}
+                title="ChatGPT"
+                description="Productivity"
               />
-            </div>
-          </section>
-
-          <section className="tech-cards">
-            <h2>Hardware</h2>
-            <div className="cards-grid-tsp">
-              <Card imageUrl={FigmaIcon} title="Figma" description="Design" />
+              <Card imageUrl={Chrome} title="Chrome" description="Browser" />
               <Card
-                imageUrl={NextJsIcon}
-                title="Next.js"
-                description="Web Framework"
-              />
-              <Card
-                imageUrl={TailwindIcon}
-                title="TailwindCSS"
-                description="CSS"
+                imageUrl={AppleMusic}
+                title="Apple Music"
+                description="Music"
               />
             </div>
           </section>

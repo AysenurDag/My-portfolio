@@ -8,12 +8,12 @@
 
 .work-container.dark {
   background-color: var(--darkModeBackgroundColor);
-  color: rgba(128, 128, 128, 1);
+  color: var(--lightModeBackgroundColor);
 }
 
 .work-container.light {
   background-color: var(--lightModeBackgroundColor);
-  color: rgba(125, 125, 125, 1);
+  color: var(--darkModeBackgroundColor);
 }
 
 .background-top,
@@ -144,27 +144,27 @@
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
-  color: #ffffff; /* Text color */
+  color: #ffffff;
   text-decoration: none;
   background-color: var(--cardColor);
-  font-weight: 500; /* Slightly bolder text */
+  font-weight: 500;
   border-radius: 8px;
   transition: color 0.3s ease;
 }
 
 .projects .card-link:hover {
-  color: #cccccc; /* Lighten text color on hover */
+  color: #cccccc;
 }
 
 .projects .card-link::after {
   content: "→";
-  margin-left: 8px; /* Space between text and arrow */
-  font-size: 18px; /* Adjust arrow size */
+  margin-left: 8px;
+  font-size: 18px;
   transition: margin-left 0.3s ease;
 }
 
 .projects .card-link:hover::after {
-  margin-left: 12px; /* Animate the arrow on hover */
+  margin-left: 12px;
 }
 
 .your-project {
@@ -202,7 +202,7 @@
 .get-in-touch {
   display: flex;
   align-items: center;
-  justify-content: center; /* Butonu yatay olarak ortalamak için */
+  justify-content: center;
   gap: 10px;
   padding: 12px 24px;
   background: linear-gradient(90deg, rgba(26, 26, 26, 1), rgba(19, 19, 19, 1));
@@ -212,7 +212,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   color: #ffffff;
-  margin: 0 auto; /* Butonu dikey olarak ortalamak için */
+  margin: 0 auto;
 }
 
 .get-in-touch .button-icon {
@@ -228,4 +228,87 @@
   width: 20px;
   height: auto;
   margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .work-main-section {
+    width: 95%;
+    padding: 80px 15px 40px;
+  }
+
+  .work-content h1 {
+    font-size: 36px;
+  }
+
+  .work-content p {
+    font-size: 18px;
+  }
+
+  .projects,
+  .projects .projects-wrapper {
+    width: 95%;
+  }
+
+  .projects .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .projects .card-content {
+    max-width: 100%;
+  }
+
+  .projects .card-image {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .projects .card-image img {
+    width: 90%;
+  }
+
+  .your-project {
+    padding: 30px;
+    margin-top: 60px;
+  }
+
+  .get-in-touch {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-main-section {
+    padding: 60px 10px 30px;
+  }
+
+  .work-content h1 {
+    font-size: 28px;
+  }
+
+  .work-content p {
+    font-size: 16px;
+  }
+
+  .projects .card-title {
+    font-size: 20px;
+  }
+
+  .projects .card-description {
+    font-size: 14px;
+  }
+
+  .your-project h2 {
+    font-size: 24px;
+  }
+
+  .your-project p {
+    font-size: 16px;
+  }
+
+  .get-in-touch {
+    font-size: 14px;
+  }
 }

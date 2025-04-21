@@ -5,17 +5,17 @@
   background-color: var(--darkModeBackgroundColor);
   min-height: 100vh;
   position: relative;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 .notebook-container.dark {
   background-color: var(--darkModeBackgroundColor);
-  color: rgba(128, 128, 128, 1);
+  color: var(--lightModeBackgroundColor);
 }
 
 .notebook-container.light {
   background-color: var(--lightModeBackgroundColor);
-  color: rgba(125, 125, 125, 1);
+  color: var(--darkModeBackgroundColor);
 }
 
 .background-top,
@@ -92,7 +92,6 @@
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   aspect-ratio: 1 / 1;
-  width: 100%;
 }
 
 .notebook-cards .cards-grid-nb .card img {

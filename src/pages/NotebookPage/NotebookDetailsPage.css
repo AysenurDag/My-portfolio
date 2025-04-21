@@ -10,12 +10,12 @@
 
 .notebook-details-container.dark {
   background-color: var(--darkModeBackgroundColor);
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--lightModeBackgroundColor);
 }
 
 .notebook-details-container.light {
   background-color: var(--lightModeBackgroundColor);
-  color: rgba(0, 0, 0, 0.9);
+  color: var(--darkModeBackgroundColor);
 }
 
 .background-top,

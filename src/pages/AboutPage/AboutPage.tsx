@@ -44,7 +44,7 @@ const AboutPage: React.FC = () => {
               incredibly rewarding experience to develop applications that
               directly impact the lives of Moroccan citizens.
             </p>
-            <h2>WHAT I DO</h2>
+            <h2>WHAT I DID</h2>
             <p>
               Before delving into the realm of front end engineering, I spent
               five years as a graphic designer. This background has equipped me

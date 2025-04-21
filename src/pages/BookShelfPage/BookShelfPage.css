@@ -10,11 +10,11 @@
 
 .bookshelf-container.dark {
   background-color: var(--darkModeBackgroundColor);
-  color: rgba(128, 128, 128, 1);
+  color: var(--lightModeBackgroundColor);
 }
 .bookshelf-container.light {
   background-color: var(--lightModeBackgroundColor);
-  color: rgba(125, 125, 125, 1);
+  color: var(--darkModeBackgroundColor);
 }
 
 .background-top,
@@ -88,4 +88,33 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .bookshelf-main-section {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .bookshelf-header h1 {
+    font-size: 36px;
+  }
+
+  .bookshelf-header p {
+    font-size: 18px;
+  }
+
+  .separator {
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookshelf-header h1 {
+    font-size: 28px;
+  }
+
+  .bookshelf-header p {
+    font-size: 16px;
+  }
 }

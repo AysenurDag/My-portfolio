@@ -5,7 +5,7 @@ interface ThemeState {
 }
 
 const initialState: ThemeState = {
-  darkMode: true, // Başlangıçta dark mode açık
+  darkMode: true,
 };
 
 const themeSlice = createSlice({

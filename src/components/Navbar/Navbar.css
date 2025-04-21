@@ -135,19 +135,16 @@
   opacity: 0.8;
 }
 
-/* Social Icons Styles */
 .social-icons {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* Dark Mode Icon */
 [data-theme="dark"] .icon {
   color: #ffffff;
 }
 
-/* Light Mode Icon */
 [data-theme="light"] .icon {
   color: #000000;
 }

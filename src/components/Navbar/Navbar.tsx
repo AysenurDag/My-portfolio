@@ -28,7 +28,9 @@ const Navbar: React.FC = () => {
         <li className="menu-item">
           <Link to="/notebook">Notebook</Link>
         </li>
-        <li className="menu-item">Contact</li>
+        <li className="menu-item">
+          <Link to="/contact">Contact</Link>
+        </li>
         <div className="dropdown">
           <li className="menu-item">More ▾</li>
           <div className="dropdown-content">

@@ -3,11 +3,11 @@ import "./HomePage.css";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store";
 
-/* Bileşenlerin import edilmesi */
+/* components */
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import Card from "../../components/Card/Card";
-/* Assetlerin import edilmesi */
+/* Assets */
 import DarkLogo from "../../assets/Mode=Dark.png";
 import LightLogo from "../../assets/Mode=Light.png";
 import CardImage1 from "../../assets/SubiiLogo.png";
@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
             <p className="subtitle">
               Experienced in writing B2B applications using React, experienced
               in using state management tools such as Redux, and also has
-              experience in end-to-end application development by writing .net
+              experience in end-to-end application development by writing .NET
               apis at a basic level. A young dynamic software engineer student
               with experience on modern applications.
             </p>
@@ -113,7 +113,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Tanıma Bölümü */}
       <section className="get-to-know-me">
         <h2>Get to know me</h2>
         <div className="cards-grid-hp">
@@ -140,7 +139,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Birlikte Çalışalım Bölümü */}
       <section className="lets-work-together">
         <div>
           <h2>Let's work together</h2>

@@ -9,12 +9,12 @@
 
 .tech-stack-container.dark {
   background-color: var(--darkModeBackgroundColor);
-  color: rgba(128, 128, 128, 1);
+  color: var(--lightModeBackgroundColor);
 }
 
 .tech-stack-container.light {
   background-color: var(--lightModeBackgroundColor);
-  color: rgba(125, 125, 125, 1);
+  color: var(--darkModeBackgroundColor);
 }
 
 .background-top,
@@ -111,7 +111,7 @@
 }
 
 [data-theme="dark"] .tech-cards .cards-grid-tsp .card {
-  background-color: var(--darkModeBackgroundColor);
+  background-color: var(--cardColor);
   color: rgba(128, 128, 128, 1);
 }
 
@@ -146,4 +146,40 @@
   font-size: 14px;
   text-align: right;
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .tech-stack-main-section {
+    padding: 80px 15px 40px;
+  }
+
+  .techstack-content h1 {
+    font-size: 36px;
+  }
+
+  .techstack-content p {
+    font-size: 18px;
+  }
+
+  .tech-cards .cards-grid-tsp {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack-main-section {
+    padding: 60px 10px 30px;
+  }
+
+  .techstack-content h1 {
+    font-size: 28px;
+  }
+
+  .techstack-content p {
+    font-size: 16px;
+  }
+
+  .tech-cards .cards-grid-tsp {
+    grid-template-columns: 1fr;
+  }
 }

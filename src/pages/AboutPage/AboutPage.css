@@ -8,12 +8,12 @@
 
 .about-container.dark {
   background-color: var(--darkModeBackgroundColor);
-  color: rgba(128, 128, 128, 1);
+  color: var(--lightModeBackgroundColor);
 }
 
 .about-container.light {
   background-color: var(--lightModeBackgroundColor);
-  color: rgba(125, 125, 125, 1);
+  color: var(--darkModeBackgroundColor);
 }
 
 .background-top,
@@ -108,7 +108,7 @@
 
 .signature {
   margin-top: 40px;
-  width: 200px;
+  width: 400px;
 }
 
 .get-in-touch-button {
@@ -136,4 +136,55 @@
   font-size: 20px;
   margin-bottom: 40px;
   color: inherit;
+}
+@media (max-width: 768px) {
+  .about-main-section {
+    padding: 80px 15px 40px;
+  }
+
+  .about-content h1 {
+    font-size: 36px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+  }
+
+  .about-description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .about-image {
+    width: 100%;
+    gap: 50px;
+  }
+
+  .signature {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-main-section {
+    padding: 60px 10px 30px;
+  }
+
+  .about-content h1 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .get-in-touch-button {
+    padding: 10px 20px;
+  }
 }
