@@ -16,7 +16,6 @@ import BookshelfIcon from "../../assets/Group-1984.png";
 import TechStackIcon from "../../assets/TechStackIcon.png";
 import ButtonIcon from "../../assets/ButtonIcon.png";
 import PortfolioImage from "../../assets/PortfolioImage.png";
-import PortfolioLogo from "../../assets/PortfolioLogo.png";
 import KeyloggerImage from "../../assets/KeyloggerImage.png";
 import KeyloggerLogo from "../../assets/KeyloggerLogo.png";
 
@@ -93,7 +92,6 @@ const HomePage: React.FC = () => {
           />
 
           <Card
-            logoUrl={PortfolioLogo}
             title="Personal Portfolio Website"
             description="I built a responsive portfolio site using React and TypeScript. The project is component-based and includes dynamic features powered by Redux for theme state management. It features reusable Card, Navbar, and Footer components, and supports both dark and light modes."
             imageUrl={PortfolioImage}
