@@ -92,12 +92,11 @@
 }
 
 .about-image {
-  position: relative;
-  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
+  gap: 20px;
+  width: 30%;
 }
 
 .rectangle {
@@ -112,7 +111,7 @@
 }
 
 .get-in-touch-button {
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
   background: linear-gradient(90deg, rgba(26, 26, 26, 1), rgba(19, 19, 19, 1));
   padding: 12px 24px;
   color: #fff;
