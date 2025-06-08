@@ -1,15 +1,18 @@
+/* Body ve root container */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: var(--darkModeBackgroundColor);
   color: var(--lightModeBackgroundColor);
 }
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
   position: relative;
+  width: 100%;
 }
 
 .background-top,
@@ -50,38 +53,13 @@ body {
   color: var(--darkModeBackgroundColor);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  background-color: var(--darkModeBackgroundColor);
-}
-
-.about-container.dark {
-  background-color: var(--darkModeBackgroundColor);
-  color: rgba(128, 128, 128, 1);
-}
-
-.about-container.light {
-  background-color: var(--lightModeBackgroundColor);
-  color: rgba(125, 125, 125, 1);
-}
-
-/* Main Section Styles */
+/* Main section */
 .main-section {
-  width: 1024px;
+  width: 100%;
+  max-width: 1024px;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 120px 20px 0;
   flex: 1;
@@ -89,27 +67,28 @@ body {
 
 .content-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
 }
 
 .text-section {
+  flex: 1 1 400px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 50%;
   z-index: 2;
 }
 
 .title {
-  width: 800px;
-  font-size: 80px;
+  font-size: 4rem;
   font-weight: bold;
   color: var(--basicDarkGray);
+  max-width: 100%;
+  word-wrap: break-word;
 }
+
 .title span {
   color: var(--basicDarkGray);
 }
@@ -122,34 +101,18 @@ body {
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 36px;
-  width: 700px;
+  line-height: 1.6;
   color: gray;
-}
-
-.image-container {
-  max-height: 540px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
-.mode-logo {
-  max-width: 540px;
-  height: auto;
-  opacity: 0.9;
-}
-[data-theme="light"] .mode-logo {
-  opacity: 0.37;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 .button-group {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  justify-content: flex-start;
 }
 
 .button {
@@ -175,64 +138,94 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.button.disabled {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: rgba(255, 255, 255, 0.5);
-  cursor: not-allowed;
-  border-color: rgba(255, 255, 255, 0.1);
+.image-container {
+  flex: 1 1 300px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Selected works part */
+.mode-logo {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  opacity: 0.9;
+}
+[data-theme="light"] .mode-logo {
+  opacity: 0.37;
+}
+
+/* Selected work  */
+
 .selected-work {
-  width: 1024px;
+  width: 100%;
+  max-width: 1024px;
   margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.selected-work h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--basicDarkGray);
 }
 
 .selected-work .card-wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 1024px;
-  margin: 0 auto;
+  width: 100%;
 }
-.selected-work .card-wrapper .card {
+
+.selected-work .card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid none;
   background-color: var(--cardColor);
+  border-radius: 8px;
+  overflow: hidden;
 }
-[data-theme="light"] .selected-work .card-wrapper .card {
+
+.dark .selected-work .card {
+  background-color: var(--cardColor);
+  color: var(--lightModeBackgroundColor);
+}
+
+[data-theme="light"] .selected-work .card {
   background-color: var(--lightModeBackgroundColor);
   color: var(--darkModeBackgroundColor);
 }
+
 .selected-work .card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 50%;
+  flex: 1 1 300px;
+  padding: 20px;
 }
 
 .selected-work .card-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .selected-work .card-description {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
 .selected-work .card-image {
-  max-width: 400px;
+  flex: 1 1 200px;
   display: flex;
   justify-content: flex-end;
+  padding: 20px;
 }
 
 .selected-work .card-image img {
-  width: 90%;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 8px;
 }
@@ -241,12 +234,12 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
-  color: var(--lightModeBackgroundColor);
   text-decoration: none;
   background-color: var(--cardColor);
   font-weight: 500;
   border-radius: 8px;
   transition: color 0.3s ease;
+  color: var(--lightModeBackgroundColor);
 }
 [data-theme="light"] .selected-work .card-link {
   background-color: var(--lightModeBackgroundColor);
@@ -264,13 +257,21 @@ body {
   margin-left: 12px;
 }
 
-/* Get to know me part */
+/* get2now me */
 
 .get-to-know-me {
-  width: 1024px;
-  margin: 0 auto;
-  margin-top: 50px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 50px auto 0;
+  padding: 0 20px;
   border-radius: 32px;
+}
+
+.get-to-know-me h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--basicDarkGray);
 }
 
 .get-to-know-me .cards-grid-hp {
@@ -279,69 +280,84 @@ body {
   gap: 16px;
 }
 
-.get-to-know-me .cards-grid-hp .card {
+.get-to-know-me .card {
+  aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  text-align: center;
-}
-[data-theme="light"] .get-to-know-me .cards-grid-hp .card {
-  background-color: var(--lightModeBackgroundColor);
+  justify-content: space-between;
+  background-color: var(--dark-gray);
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+.dark .get-to-know-me .card {
+  background-color: var(--cardColor);
+  color: var(--lightModeBackgroundColor);
 }
 
-.get-to-know-me .cards-grid-hp .card img {
+[data-theme="light"] .get-to-know-me .card {
+  background-color: var(--lightModeBackgroundColor);
+  color: var(--darkModeBackgroundColor);
+}
+.get-to-know-me .card img {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
+  max-width: 90%;
   align-self: center;
+  height: auto;
 }
-.get-to-know-me .cards-grid-hp .card .card-title {
-  font-size: 32px;
+
+.get-to-know-me .card .card-title {
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 50px;
+  margin: 0;
+  text-align: center;
 }
 
-.get-to-know-me .cards-grid-hp .card .card-description {
-  font-size: 16px;
+.get-to-know-me .card .card-description {
+  font-size: 1rem;
   color: var(--basicDarkGray);
+  margin: 8px 0;
+  text-align: center;
+  word-wrap: break-word;
 }
 
-/* Let's work together part */
+/* lets work together */
+
 .lets-work-together {
-  width: 1024px;
+  width: 100%;
+  max-width: 1024px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 20px;
-  margin-top: 50px;
+  margin: 50px auto 0;
   border-radius: 12px;
+  background-color: var(--darkModeBackgroundColor);
   transition: all 0.2s ease;
 }
 [data-theme="light"] .lets-work-together {
   background-color: #ffffff;
 }
-[data-theme="dark"] .lets-work-together {
-  background-color: var(--darkModeBackgroundColor);
-}
 
 .lets-work-together h2 {
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
+  color: var(--lightModeBackgroundColor);
 }
 [data-theme="light"] .lets-work-together h2 {
   color: #000000;
 }
-[data-theme="dark"] .lets-work-together h2 {
-  color: var(--lightModeBackgroundColor);
-}
 
 .lets-work-together p {
-  font-size: 18px;
+  font-size: 1rem;
   color: gray;
   margin-top: 5px;
+  max-width: 600px;
 }
 
 .get-in-touch-container {
@@ -350,7 +366,7 @@ body {
 }
 
 .get-in-touch {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   padding: 12px 24px;
@@ -371,65 +387,28 @@ body {
 .get-in-touch .button-icon {
   width: 20px;
   height: auto;
+  margin-right: 8px;
 }
 
 .get-in-touch:hover {
   opacity: 0.9;
 }
 
-.button-icon {
-  width: 20px;
-  height: auto;
-  margin-right: 8px;
-}
-
 @media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
   .title {
-    font-size: 32px;
-    width: auto;
+    font-size: 2.5rem;
     text-align: center;
   }
-
   .subtitle {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
     text-align: center;
-    width: auto;
   }
 
-  .button-group {
+  .content-wrapper {
     flex-direction: column;
-    gap: 10px;
     align-items: center;
-  }
-
-  .image-container {
-    display: none;
-  }
-  .selected-work {
-    padding: 10px;
-  }
-
-  .selected-work .card-wrapper {
-    flex-direction: column;
     gap: 20px;
-  }
-
-  .selected-work .card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .selected-work .card-content {
-    justify-content: flex-start;
-    gap: 10px;
-  }
-
-  .selected-work .card-image {
-    display: none;
+    padding: 0 10px;
   }
 
   .get-to-know-me .cards-grid-hp {
@@ -441,47 +420,46 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    padding: 20px 10px;
   }
-
-  .lets-work-together p,
-  .lets-work-together h2 {
-    text-align: center;
-  }
-
   .lets-work-together .get-in-touch {
-    display: none;
-  }
-
-  .get-in-touch-container {
-    justify-content: center;
-  }
-
-  .get-in-touch-container .get-in-touch {
-    display: flex;
     margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .selected-work .card-wrapper {
+    gap: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 24px;
+    font-size: 1.8rem;
   }
-
   .subtitle {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.9rem;
   }
-
   .button {
     padding: 10px 20px;
     font-size: 12px;
   }
-
-  .get-to-know-me .cards-grid-hp .card {
-    padding: 10px;
+  .selected-work .card-title {
+    font-size: 1.25rem;
   }
-
-  .lets-work-together {
-    padding: 20px;
+  .selected-work .card-description {
+    font-size: 0.9rem;
+  }
+  .get-to-know-me .card .card-title {
+    font-size: 1.25rem;
+  }
+  .get-to-know-me .card .card-description {
+    font-size: 0.9rem;
+  }
+  .lets-work-together h2 {
+    font-size: 2rem;
+  }
+  .lets-work-together p {
+    font-size: 0.9rem;
   }
 }
