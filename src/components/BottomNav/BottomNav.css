@@ -1,0 +1,38 @@
+.bottom-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: none; /* sadece mobilde gösterilecek */
+  justify-content: space-between;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.bottom-nav a {
+  color: white;
+  font-size: 22px;
+  padding: 8px;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+.bottom-nav a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bottom-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* sadece 768px altı (mobil) */
+@media (max-width: 768px) {
+  .bottom-nav {
+    display: flex;
+  }
+}

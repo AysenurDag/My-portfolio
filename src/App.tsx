@@ -8,6 +8,7 @@ import TechStackPage from "./pages/TechStackPage/TechStackPage";
 import BookShelfPage from "./pages/BookShelfPage/BookShelfPage";
 import NotebookDetailsPage from "./pages/NotebookPage/NotebookDetailsPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import BottomNav from "./components/BottomNav/BottomNav";
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Route path="/notebook-details" element={<NotebookDetailsPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+      <BottomNav />
     </Router>
   );
 };
