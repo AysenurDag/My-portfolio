@@ -404,6 +404,9 @@ body {
     text-align: center;
   }
 
+  .image-container {
+    display: none;
+  }
   .content-wrapper {
     flex-direction: column;
     align-items: center;
@@ -439,6 +442,9 @@ body {
   }
   .subtitle {
     font-size: 0.9rem;
+  }
+  .image-container {
+    display: none;
   }
   .button {
     padding: 10px 20px;
