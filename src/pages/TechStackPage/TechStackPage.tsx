@@ -16,6 +16,11 @@ import Duolingo from "../../assets/Duolingo.png";
 import ChatGPT from "../../assets/ChatGPT.png";
 import Chrome from "../../assets/Chrome.png";
 import AppleMusic from "../../assets/AppleMusic.png";
+import Abp from "../../assets/abp.png";
+import PgAdmin from "../../assets/pgadmin4.png";
+import VisualStudio from "../../assets/visualstudio.png";
+import Csharp from "../../assets/csharp.png";
+import Javascript from "../../assets/javascript.png";
 
 const TechStackPage: React.FC = () => {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
@@ -38,16 +43,27 @@ const TechStackPage: React.FC = () => {
           <section className="tech-cards">
             <h2>Dev & Design</h2>
             <div className="cards-grid-tsp">
+              <Card
+                imageUrl={VsCodeIcon}
+                title="VS Code"
+                description="Editor"
+              />
+              <Card
+                imageUrl={VisualStudio}
+                title="Visual Studio"
+                description="IDE"
+              />
+              <Card
+                imageUrl={Csharp}
+                title="C#"
+                description="Language"
+              />
+              <Card imageUrl={Abp} title="ABP" description="Framework" />
               <Card imageUrl={FigmaIcon} title="Figma" description="Design" />
               <Card
                 imageUrl={GithubIcon}
                 title="Github"
                 description="Version Control"
-              />
-              <Card
-                imageUrl={VsCodeIcon}
-                title="VS Code"
-                description="Editor"
               />
               <Card
                 imageUrl={TypeScript}
@@ -58,6 +74,12 @@ const TechStackPage: React.FC = () => {
                 imageUrl={ReactQuery}
                 title="React Query"
                 description="Server State "
+              />
+              <Card imageUrl={PgAdmin} title="pgAdmin 4" description="Database" />
+              <Card
+                imageUrl={Javascript}
+                title="JavaScript"
+                description="Language"
               />
             </div>
           </section>

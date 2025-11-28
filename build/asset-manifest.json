@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.664461e6.css",
+    "main.js": "/static/js/main.3a918232.js",
+    "static/media/Book5.png": "/static/media/Book5.d223ef12e55bd41ebaa9.png",
+    "static/media/Book6.png": "/static/media/Book6.6562bb33dce5d200f62d.png",
+    "static/media/DarkBackgroundGradient.png": "/static/media/DarkBackgroundGradient.8d380a930c38145a226d.png",
+    "static/media/KeyloggerImage.png": "/static/media/KeyloggerImage.336c555f3d517e13ad32.png",
+    "static/media/PortfolioImage.png": "/static/media/PortfolioImage.85167a29c9a400ba1158.png",
+    "static/media/AboutImage.png": "/static/media/AboutImage.e67d61f72a053c26c470.png",
+    "static/media/KeyloggerLogo.png": "/static/media/KeyloggerLogo.10f361869fd02a725a8e.png",
+    "static/media/LightBacgroundGradient.png": "/static/media/LightBacgroundGradient.2d0190136487e44292d3.png",
+    "static/media/Book3.png": "/static/media/Book3.695f19a22686b9eceb68.png",
+    "static/media/Book7.png": "/static/media/Book7.e7705f99319a07114ac4.png",
+    "static/media/NotebookImage.png": "/static/media/NotebookImage.1a24e6459505ed85b28e.png",
+    "static/media/Book8.png": "/static/media/Book8.355509f5b069910ecbdd.png",
+    "static/media/Mode=Dark.png": "/static/media/Mode=Dark.ab59b1e0d230ad44bdf1.png",
+    "static/media/Book4.png": "/static/media/Book4.d9acbf0eea024d9d4b65.png",
+    "static/media/AboutIcon.png": "/static/media/AboutIcon.41ba7e9d7e8171070e25.png",
+    "static/media/Notebookdetailspage.png": "/static/media/Notebookdetailspage.682cb57d1a2932b7ae76.png",
+    "static/media/Mode=Light.png": "/static/media/Mode=Light.7142549bead2f61eed99.png",
+    "static/media/Group-1984.png": "/static/media/Group-1984.0e3802cd3f25776eeac4.png",
+    "static/media/PortfolioLogo.png": "/static/media/PortfolioLogo.892dd6bac3f157b10c60.png",
+    "static/media/Book1.png": "/static/media/Book1.ca88d936ffc13330a017.png",
+    "static/media/figmaIcon.png": "/static/media/figmaIcon.457d844232d6cfe0f32b.png",
+    "static/media/Book2.png": "/static/media/Book2.e02e0f3d8573175535ab.png",
+    "static/media/AppleMusic.png": "/static/media/AppleMusic.617ae24b146f4c28ff2b.png",
+    "static/media/TechStackIcon.png": "/static/media/TechStackIcon.0bf197ade897effb54dd.png",
+    "static/media/VsCode.png": "/static/media/VsCode.c0e134c3bbf4bd018d4c.png",
+    "static/media/Chrome.png": "/static/media/Chrome.948409c70a07afda0491.png",
+    "static/media/signatureDark.png": "/static/media/signatureDark.bc519be279d7d435f646.png",
+    "static/media/Notebook.png": "/static/media/Notebook.1cafbb7f32a165133d93.png",
+    "static/media/signature.png": "/static/media/signature.ed1bc5762ee5909fbd70.png",
+    "index.html": "/index.html",
+    "main.664461e6.css.map": "/static/css/main.664461e6.css.map",
+    "main.3a918232.js.map": "/static/js/main.3a918232.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.664461e6.css",
+    "static/js/main.3a918232.js"
+  ]
+}

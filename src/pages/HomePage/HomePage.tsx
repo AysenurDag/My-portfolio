@@ -16,8 +16,8 @@ import BookshelfIcon from "../../assets/Group-1984.png";
 import TechStackIcon from "../../assets/TechStackIcon.png";
 import ButtonIcon from "../../assets/ButtonIcon.png";
 import PortfolioImage from "../../assets/PortfolioImage.png";
-import KeyloggerImage from "../../assets/KeyloggerImage.png";
-import KeyloggerLogo from "../../assets/KeyloggerLogo.png";
+import EnerjisaLogo from "../../assets/enerjisa.png";
+import LuportalImage from "../../assets/luportal.jpeg";
 
 const HomePage: React.FC = () => {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
@@ -38,12 +38,11 @@ const HomePage: React.FC = () => {
               <span className="highlight">Ayşenur Dağ</span>
             </h1>
             <p className="subtitle">
-              Proficient in developing B2B platforms using React and TypeScript,
-              and skilled in managing application state with Redux. Also
-              experienced in full-stack development, including creating and
-              integrating .NET APIs using C# and SQL. Eager to contribute to
-              real-world software projects through a clean, scalable, and
-              user-centered development approach.
+              A Software Developer graduated from Akdeniz University's English
+              Computer Engineering department, specializing in C# and .NET
+              technologies. Currently working on the Enerjisa project at Atolla
+              Tech, where they joined in September. Has practical experience in
+              ABP Framework, PostgreSQL/PgAdmin, and Visual Studio environments.
             </p>
             <div className="button-group">
               <button
@@ -82,10 +81,10 @@ const HomePage: React.FC = () => {
         <h2>Selected Work</h2>
         <div className="card-wrapper">
           <Card
-            logoUrl={KeyloggerLogo}
-            title="InkSpy — Python-based KeyLogger for PDF Embedding"
-            description="As part of my Information System Security coursework, I developed a keylogger using Python that can be embedded within a PDF file. This script records keystrokes in the background and sends them to a predefined attacker email address. The project demonstrates real-world cybersecurity threats, including social engineering and data exfiltration techniques."
-            imageUrl={KeyloggerImage}
+            logoUrl={EnerjisaLogo}
+            title="LuPortal - Lisanssız Üreticiler Portalı"
+            description="LuPortal is a critical, large-scale corporate application developed for the Enerjisa project at Atolla Tech, serving as the backend API for a producer portal. This project is built entirely on the ABP Framework and ASP.NET Core to ensure a robust and modular architecture. We utilized the standard ABP layered architecture—separating concerns into Domain, Application, and HttpApi layers—while employing C# and Visual Studio for implementation. Data management is handled via Entity Framework Core with PostgreSQL/PgAdmin, and the application is configured with Docker support for containerization and deployment flexibility."
+            imageUrl={LuportalImage}
             link="https://example.com"
             buttonLabel="Learn More"
             orientation="horizontal-image-right"

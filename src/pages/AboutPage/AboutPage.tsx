@@ -29,30 +29,32 @@ const AboutPage: React.FC = () => {
           <div className="about-text">
             <h2>WHO I AM</h2>
             <p>
-              I'm Ayşenur Dağ, a passionate front-end developer and UI/UX
-              enthusiast based in Antalya, Turkey. I also have hands-on
-              experience with back-end technologies such as .NET, C#, and Azure
-              Functions, enabling me to contribute effectively across the full
-              stack.
+              I'm Ayşenur Dağ, a Junior Software Engineer with a degree in
+              English Computer Engineering from Akdeniz University. My primary
+              focus is on robust backend development, specializing in the C#
+              and .NET ecosystem. I currently work at Atolla Tech and possess
+              hands-on experience in full-stack contribution, including
+              front-end technologies like React and TypeScript.
             </p>
             <h2>WHAT I DO</h2>
             <p>
-              With hands-on experience in building B2B applications, I
-              specialize in developing user-focused interfaces using React,
-              TypeScript, TailwindCSS, and Redux for efficient state management.
-              During my internship , I contributed to an energy reporting
-              project for Turkey’s leading electricity distribution companies. I
-              developed front-end features with React and implemented back-end
-              functionality using .NET 8, Azure Functions, and SQL integrations.
+              I actively contribute to the large-scale Enerjisa project, where I
+              specialize in developing corporate applications and backend APIs
+              using the ABP Framework. I manage data persistence with PostgreSQL
+              and apply architectural principles like Domain Driven Design to
+              ensure scalability. I am dedicated to writing clean, maintainable
+              code and optimizing system performance, leveraging Visual Studio
+              as my core development environment.
             </p>
             <h2>WHAT I DID</h2>
             <p>
-              contributed to an enterprise-level energy reporting project where
-              I was responsible for both the frontend (React, TypeScript) and
-              backend (.NET 8, Azure Functions, SQL) development. This
-              experience gave me the opportunity to apply what I’ve learned in
-              real-world scenarios and to collaborate in a professional
-              engineering environment.
+              My professional experience began in September with Atolla Tech,
+              where I was responsible for redeveloping existing APIs from
+              scratch using modern .NET technologies. Prior to this, my project
+              experience includes building a Hotel Booking System utilizing a
+              Microservices architecture with Docker Compose and integrating
+              authentication via Microsoft Entra ID (Azure AD), demonstrating my
+              proficiency in enterprise-level system design.
             </p>
             <p>
               Feel free to reach out via e-mail, or follow me on Twitter. Want

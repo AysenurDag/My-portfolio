@@ -11,8 +11,8 @@ import Stars from "../../assets/Stars.png";
 import ButtonIcon from "../../assets/ButtonIcon.png";
 import PortfolioImage from "../../assets/PortfolioImage.png";
 import PortfolioLogo from "../../assets/PortfolioLogo.png";
-import KeyloggerImage from "../../assets/KeyloggerImage.png";
-import KeyloggerLogo from "../../assets/KeyloggerLogo.png";
+import EnerjisaLogo from "../../assets/enerjisa.png";
+import LuportalImage from "../../assets/luportal.jpeg";
 
 const WorkPage: React.FC = () => {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
@@ -34,10 +34,10 @@ const WorkPage: React.FC = () => {
         <section className="projects">
           <div className="projects-wrapper">
             <Card
-              logoUrl={KeyloggerLogo}
-              title="InkSpy — Python-based KeyLogger for PDF Embedding"
-              description="As part of my Information System Security coursework, I developed a keylogger using Python that can be embedded within a PDF file. This script records keystrokes in the background and sends them to a predefined attacker email address. The project demonstrates real-world cybersecurity threats, including social engineering and data exfiltration techniques."
-              imageUrl={KeyloggerImage}
+              logoUrl={EnerjisaLogo}
+              title="LuPortal - Lisanssız Üreticiler Portalı"
+              description="LuPortal is a critical, large-scale corporate application developed for the Enerjisa project at Atolla Tech, serving as the backend API for a producer portal. This project is built entirely on the ABP Framework and ASP.NET Core to ensure a robust and modular architecture. We utilized the standard ABP layered architecture—separating concerns into Domain, Application, and HttpApi layers—while employing C# and Visual Studio for implementation. Data management is handled via Entity Framework Core with PostgreSQL/PgAdmin, and the application is configured with Docker support for containerization and deployment flexibility."
+              imageUrl={LuportalImage}
               link="https://example.com"
               buttonLabel="Learn More"
               orientation="horizontal-image-right"

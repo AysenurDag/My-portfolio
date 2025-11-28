@@ -40,7 +40,6 @@ const Navbar: React.FC = () => {
             <div className="dropdown-item">
               <Link to="/tech-stack">Tech Stack</Link>
             </div>
-            <div className="dropdown-item">This UI Kit</div>
           </div>
         </div>
       </ul>
