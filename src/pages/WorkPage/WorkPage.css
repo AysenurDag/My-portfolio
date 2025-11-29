@@ -46,9 +46,11 @@
 }
 
 .work-main-section {
-  width: 1024px;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 120px 20px 60px;
+  box-sizing: border-box;
 }
 
 .work-content {
@@ -77,7 +79,7 @@
 }
 
 .projects {
-  width: 1024px;
+  width: 100%;
   margin-bottom: 40px;
 }
 
@@ -93,7 +95,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 1024px;
+  width: 100%;
   margin: 0 auto;
 }
 

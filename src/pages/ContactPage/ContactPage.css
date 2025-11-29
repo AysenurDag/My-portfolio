@@ -47,7 +47,8 @@
 }
 
 .contact-main {
-  width: 1024px;
+  width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 120px 20px 60px;
 }
@@ -84,6 +85,8 @@
   padding: 24px;
   color: #ffffff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 [data-theme="light"] .email-form {
@@ -147,12 +150,12 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  /*sonradan ekledim*/
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
 }
 
 .form-body span {
-  flex: 0 0 32px;
+  flex: 0 0 80px;
   text-align: right;
 }
 
@@ -182,14 +185,13 @@
   background: var(--dark-gray);
   color: #ffffff;
   border: none;
-  /*padding: 12px;*/
   font-size: 14px;
   position: relative;
-  /*border-bottom: 2px solid rgba(85, 85, 85, 0.3);*/
   transition: border-color 0.3s;
   width: 100%;
   max-width: 800px;
   height: 44px;
+  box-sizing: border-box;
 }
 
 [data-theme="light"] .form-body input {
@@ -208,8 +210,9 @@
 }
 
 textarea {
-  width: 801px;
-  height: 200px;
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;
   border: none;
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.85);
@@ -219,6 +222,7 @@ textarea {
   font-size: 16px;
   line-height: 1.5;
   transition: background-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
 }
 
 textarea:focus {
@@ -256,6 +260,66 @@ button {
 [data-theme="light"] button {
   background: #ffffff;
   color: #000000;
+}
+
+@media (max-width: 900px) {
+  .contact-main {
+    padding: 100px 16px 50px;
+  }
+
+  .contact-header h1 {
+    font-size: 38px;
+  }
+
+  .contact-header p {
+    font-size: 18px;
+  }
+
+  .form-body label {
+    align-items: flex-start;
+  }
+
+  .form-body span {
+    text-align: left;
+    flex: 0 0 100%;
+  }
+
+  .form-body input,
+  .form-body textarea {
+    width: 100%;
+  }
+
+  button {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact-main {
+    padding: 80px 12px 40px;
+  }
+
+  .contact-header h1 {
+    font-size: 32px;
+  }
+
+  .contact-header p {
+    font-size: 16px;
+  }
+
+  .email-form {
+    padding: 16px;
+  }
+
+  .form-body {
+    gap: 16px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
 }
 
 @media (max-width: 768px) {
