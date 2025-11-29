@@ -9,6 +9,7 @@ interface CardProps {
   logoUrl?: string;
   buttonLabel?: string;
   orientation?: string;
+  logoSize?: number;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -18,11 +19,23 @@ const Card: React.FC<CardProps> = ({
   link,
   logoUrl,
   buttonLabel,
+  logoSize,
 }) => {
+  const logoStyle = logoSize
+    ? { width: logoSize, height: logoSize, flexShrink: 0 }
+    : undefined;
+
   return (
     <div className="card">
       <div className="card-content">
-        {logoUrl && <img src={logoUrl} alt="Logo" className="card-logo-top" />}
+        {logoUrl && (
+          <img
+            src={logoUrl}
+            alt="Logo"
+            className="card-logo-top"
+            style={logoStyle}
+          />
+        )}
         <h3 className="card-title">{title}</h3>
         <p className="card-description">{description}</p>
         {link && buttonLabel && (

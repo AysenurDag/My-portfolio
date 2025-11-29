@@ -9,10 +9,9 @@ import "./WorkPage.css";
 /* importing assets */
 import Stars from "../../assets/Stars.png";
 import ButtonIcon from "../../assets/ButtonIcon.png";
-import PortfolioImage from "../../assets/PortfolioImage.png";
-import PortfolioLogo from "../../assets/PortfolioLogo.png";
 import EnerjisaLogo from "../../assets/enerjisa.png";
 import LuportalImage from "../../assets/luportal.jpeg";
+import KayaboyaUygulamaImage from "../../assets/Kayaboyauygulama.jpg";
 
 const WorkPage: React.FC = () => {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
@@ -44,12 +43,11 @@ const WorkPage: React.FC = () => {
             />
 
             <Card
-              logoUrl={PortfolioLogo}
-              title="Personal Portfolio Website"
-              description="I built a responsive portfolio site using React and TypeScript. The project is component-based and includes dynamic features powered by Redux for theme state management. It features reusable Card, Navbar, and Footer components, and supports both dark and light modes."
-              imageUrl={PortfolioImage}
-              link="https://example.com"
-              buttonLabel="Learn More"
+              title="Kaya Boya Uygulama - Professional Painting Services Website"
+              description="A modern, SEO-optimized business website for a professional painting company in Antalya, Turkey. Built with Next.js 15, React 19, and TypeScript, featuring a responsive design with Tailwind CSS, dynamic image/video gallery with lightbox functionality, WhatsApp integration for instant customer contact, and comprehensive SEO implementation including sitemap generation, Open Graph tags, and JSON-LD structured data (LocalBusiness schema) for local search visibility."
+              imageUrl={KayaboyaUygulamaImage}
+              link="https://www.kayaboyauygulama.com"
+              buttonLabel="Visit Website"
               orientation="horizontal-image-right"
             />
           </div>
