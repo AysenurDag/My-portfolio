@@ -9,8 +9,6 @@ import "./WorkPage.css";
 /* importing assets */
 import Stars from "../../assets/Stars.png";
 import ButtonIcon from "../../assets/ButtonIcon.png";
-import EnerjisaLogo from "../../assets/enerjisa.png";
-import LuportalImage from "../../assets/luportal.jpeg";
 import KayaboyaUygulamaImage from "../../assets/Kayaboyauygulama.jpg";
 
 const WorkPage: React.FC = () => {
@@ -32,16 +30,6 @@ const WorkPage: React.FC = () => {
 
         <section className="projects">
           <div className="projects-wrapper">
-            <Card
-              logoUrl={EnerjisaLogo}
-              title="LuPortal - Lisanssız Üreticiler Portalı"
-              description="LuPortal is a critical, large-scale corporate application developed for the Enerjisa project at Atolla Tech, serving as the backend API for a producer portal. This project is built entirely on the ABP Framework and ASP.NET Core to ensure a robust and modular architecture. We utilized the standard ABP layered architecture—separating concerns into Domain, Application, and HttpApi layers—while employing C# and Visual Studio for implementation. Data management is handled via Entity Framework Core with PostgreSQL/PgAdmin, and the application is configured with Docker support for containerization and deployment flexibility."
-              imageUrl={LuportalImage}
-              link="https://example.com"
-              buttonLabel="Learn More"
-              orientation="horizontal-image-right"
-            />
-
             <Card
               title="Kaya Boya Uygulama - Professional Painting Services Website"
               description="A modern, SEO-optimized business website for a professional painting company in Antalya, Turkey. Built with Next.js 15, React 19, and TypeScript, featuring a responsive design with Tailwind CSS, dynamic image/video gallery with lightbox functionality, WhatsApp integration for instant customer contact, and comprehensive SEO implementation including sitemap generation, Open Graph tags, and JSON-LD structured data (LocalBusiness schema) for local search visibility."
