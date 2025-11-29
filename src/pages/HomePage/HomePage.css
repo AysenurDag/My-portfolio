@@ -413,6 +413,30 @@ body {
     padding: 0 10px;
   }
 
+  .text-section {
+    align-items: center;
+    text-align: center;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+
+  .selected-work .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .selected-work .card-content {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .selected-work .card-image {
+    display: none;
+  }
+
   .get-to-know-me .cards-grid-hp {
     grid-template-columns: 1fr;
     gap: 20px;
