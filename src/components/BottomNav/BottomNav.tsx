@@ -6,9 +6,7 @@ import {
   FaHome,
   FaUser,
   FaBriefcase,
-  FaPen,
   FaEnvelope,
-  FaBars,
 } from "react-icons/fa";
 import "./BottomNav.css";
 
@@ -33,22 +31,10 @@ const BottomNav: React.FC = () => {
         <FaBriefcase />
       </Link>
       <Link
-        to="/notebook"
-        className={location.pathname === "/notebook" ? "active" : ""}
-      >
-        <FaPen />
-      </Link>
-      <Link
         to="/contact"
         className={location.pathname === "/contact" ? "active" : ""}
       >
         <FaEnvelope />
-      </Link>
-      <Link
-        to="/bookshelf"
-        className={location.pathname === "/bookshelf" ? "active" : ""}
-      >
-        <FaBars />
       </Link>
     </nav>
   );

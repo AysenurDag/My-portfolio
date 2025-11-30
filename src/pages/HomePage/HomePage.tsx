@@ -11,8 +11,6 @@ import Card from "../../components/Card/Card";
 import DarkLogo from "../../assets/Mode=Dark.png";
 import LightLogo from "../../assets/Mode=Light.png";
 import AboutIcon from "../../assets/AboutIcon.png";
-import NotebookIcon from "../../assets/Notebook.png";
-import BookshelfIcon from "../../assets/Group-1984.png";
 import TechStackIcon from "../../assets/TechStackIcon.png";
 import ButtonIcon from "../../assets/ButtonIcon.png";
 import KayaboyaUygulamaImage from "../../assets/Kayaboyauygulama.jpg";
@@ -96,16 +94,6 @@ const HomePage: React.FC = () => {
             title="About me"
             description="Who I am and what I do"
             imageUrl={AboutIcon}
-          />
-          <Card
-            title="Notebook"
-            description="My thoughts, insights, and reflections"
-            imageUrl={NotebookIcon}
-          />
-          <Card
-            title="Bookshelf"
-            description="Books and pieces of wisdom I've enjoyed reading"
-            imageUrl={BookshelfIcon}
           />
           <Card
             title="Tech Stack"

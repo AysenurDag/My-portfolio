@@ -26,22 +26,11 @@ const Navbar: React.FC = () => {
           <Link to="/work">Work</Link>
         </li>
         <li className="menu-item">
-          <Link to="/notebook">Notebook</Link>
+          <Link to="/tech-stack">Tech Stack</Link>
         </li>
         <li className="menu-item">
           <Link to="/contact">Contact</Link>
         </li>
-        <div className="dropdown">
-          <li className="menu-item">More ▾</li>
-          <div className="dropdown-content">
-            <div className="dropdown-item">
-              <Link to="/bookshelf">Bookshelf</Link>
-            </div>
-            <div className="dropdown-item">
-              <Link to="/tech-stack">Tech Stack</Link>
-            </div>
-          </div>
-        </div>
       </ul>
       <div className="social-icons">
         <a

@@ -12,10 +12,6 @@ import GithubIcon from "../../assets/Github.png";
 import VsCodeIcon from "../../assets/VsCode.png";
 import TypeScript from "../../assets/TypeScript.png";
 import ReactQuery from "../../assets/ReactQuery.png";
-import Duolingo from "../../assets/Duolingo.png";
-import ChatGPT from "../../assets/ChatGPT.png";
-import Chrome from "../../assets/Chrome.png";
-import AppleMusic from "../../assets/AppleMusic.png";
 import Abp from "../../assets/abp.png";
 import PgAdmin from "../../assets/pgadmin4.png";
 import VisualStudio from "../../assets/visualstudio.png";
@@ -35,7 +31,7 @@ const TechStackPage: React.FC = () => {
       <main className="tech-stack-main-section">
         <div className="techstack-content">
           <h1>Tech Stack</h1>
-          <p>The dev tools, apps, and devices I use.</p>
+          <p>The dev tools and devices I use.</p>
         </div>
         <div className="separator"></div>
 
@@ -80,28 +76,6 @@ const TechStackPage: React.FC = () => {
                 imageUrl={Javascript}
                 title="JavaScript"
                 description="Language"
-              />
-            </div>
-          </section>
-
-          <section className="tech-cards">
-            <h2>Apps</h2>
-            <div className="cards-grid-tsp">
-              <Card
-                imageUrl={Duolingo}
-                title="Duolingo"
-                description="Education"
-              />
-              <Card
-                imageUrl={ChatGPT}
-                title="ChatGPT"
-                description="Productivity"
-              />
-              <Card imageUrl={Chrome} title="Chrome" description="Browser" />
-              <Card
-                imageUrl={AppleMusic}
-                title="Apple Music"
-                description="Music"
               />
             </div>
           </section>
